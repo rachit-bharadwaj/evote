@@ -14,12 +14,12 @@ export const POST = async (request: NextRequest) => {
     // Check if user already exists
     const userExists = await User.findOne({ email });
     if (userExists) {
-      return {
+      return NextResponse.json({
         status: 400,
         body: {
           message: "User already exists",
         },
-      };
+      });
     }
 
     // hash password
