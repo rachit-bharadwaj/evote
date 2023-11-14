@@ -1,0 +1,39 @@
+features:
+
+-Isues-
+issues category ---- 
+    -department/authority wise
+    -address
+    -type of issue: complaint, suggestion, problem
+    -for whom: personal, public
+    -description
+
+one person two votes
+    -primary vote
+    -secondary vote
+
+
+people can post their issue/complains/problems to the designated department/authority.
+the status of the issue can be tracked publicly
+the issue can be voted by the public
+the issue can be commented by the public
+the issue can be shared to social media
+
+-Rating-
+people can rate the service of the department/authority
+the rating can be viewed publicly
+
+-Authentic-
+the users will be authenticaed by various credentials
+
+-Voting-
+the people of India will vote for their leaders as well from the platform itself
+
+
+## Technology Stack
+
+- **Frontend**
+  - NextJS
+
+- **Backend**
+    - NextJS

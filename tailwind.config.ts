@@ -16,20 +16,31 @@ module.exports = {
       },
     },
     extend: {
+
+      // media queries
+      screens: {
+        xs: "20rem", // 320px
+        
+        sm: "40rem", // 640px
+
+        md: "48rem", // 768px
+
+        lg: "64rem", // 1024px
+
+        xl: "80rem", // 1280px
+
+        "2xl": "96rem", // 1536px
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
+        primary: "#007c7c",
+        secondary: "#04c4c4",
+        light: "#edffff",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

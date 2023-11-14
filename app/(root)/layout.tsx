@@ -1,22 +1,39 @@
+import { ReactNode } from "react";
+
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import { Poppins } from "next/font/google";
+
 import "@/app/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// components
+import { Footer, Navbar } from "@/components/shared";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "eVote",
   description: "a platform for online voting",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`selection:bg-secondary selection:text-gray-100 ${poppins.variable}`}
+    >
+      <body className="justify-between min-h-screen flex flex-col">
+        <Navbar />
+
+        {children}
+
+        <Footer />
+      </body>
     </html>
   );
 }
